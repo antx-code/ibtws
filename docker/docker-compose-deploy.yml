@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  ib_account:
+    container_name: ib_tws_account
+    image: antbai/ib_account:v0.1
+    command: ["python3", "ib_account.py"]
+    env_file:
+      - .env
+    volumes:
+      - "/home/ubuntu/config.py:/app/config.py:ro"
+    network_mode: host
+    restart: always
+
+  ib_stock_us:
+    container_name: ib_tws_stock_us
+    image: antbai/ib_stock_us:v0.1
+    command: ["python3", "ib_stock_us.py"]
+    env_file:
+      - .env
+    volumes:
+      - "/home/ubuntu/config.py:/app/config.py:ro"
+    network_mode: host
+    restart: always
+
+  ib_stock_hk:
+    container_name: ib_tws_stock_hk
+    image: antbai/ib_stock_hk:v0.1
+    command: ["python3", "ib_stock_hk.py"]
+    env_file:
+      - .env
+    volumes:
+      - "/home/ubuntu/config.py:/app/config.py:ro"
+    network_mode: host
+    restart: always

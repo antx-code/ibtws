@@ -1,0 +1,12 @@
+# ibtws
+抓取IbTws-美股、港股股票行情, 根据交易时间自动抓取
+- Description
+    - source: 源代码, 所有基础代码, 需要修改config文件, 安装requirements文件中依赖项
+    - docker: docker版本服务, 只需要修改docker compose文件中config文件的位置配置即可
+- Reference
+    - https://algotrading101.com/learn/interactive-brokers-python-api-native-guide/
+    - https://www.interactivebrokers.com/php/whiteLabel/Interoperability/Socket_Client_C++/errors.htm
+    - https://pavanmullapudy.blogspot.com/2020/06/fundamentals-of-tws-api-interactive.html
+    - https://nbviewer.jupyter.org/github/erdewit/ib_insync/blob/master/notebooks/tick_data.ipynb#Tick-by-Tick-data
+    - https://ib-insync.readthedocs.io/notebooks.html
+    - https://interactivebrokers.github.io/tws-api/top_data.html
